@@ -1,0 +1,12 @@
+name: ogwmm
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - openjdk=17
+  - maven
+  - spacy>=3.7,<4
+  - spacy-model-en_core_web_sm
+  - pip:
+      - -e ./Explanations[dev]

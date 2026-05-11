@@ -1,0 +1,8 @@
+| Case | Scenario | Description | Expected | Actual | Pass | Selected event | Failure reason | Runtime (s) |
+|---|---|---|---|---|---|---|---|---|
+| V1 | case_v1_supported_loss | Supported medicine loss with correct prior taking event | explained | explained | yes | Action_TakeMedicine | - | 0.0154 |
+| V2 | case_v2_supported_with_distractor | Supported medicine loss with distractor event and correct prior taking event | explained | explained | yes | Action_TakeMedicine | - | 0.0098 |
+| V3 | case_v3_unsupported_loss | Observed medicine loss without any supporting prior event | unexplained | unexplained | yes | - | Retract ('PhysicalObject_Medicine1', 'DUL.hasLocation', 'PhysicalObject_ShadowTray') in step 'Observed_loss_of_medicine' has no known causal explanation. | 0.006 |
+| V4 | case_v4_wrong_participant | Prior event exists but involves a different object | unexplained | unexplained | yes | - | Retract ('PhysicalObject_Medicine1', 'DUL.hasLocation', 'PhysicalObject_ShadowTray') in step 'Observed_loss_of_medicine' has no known causal explanation. | 0.0085 |
+| V5 | case_v5_wrong_location | Prior event involves the medicine but in an incompatible location | unexplained | unexplained | yes | - | Retract ('PhysicalObject_Medicine1', 'DUL.hasLocation', 'PhysicalObject_ShadowTray') in step 'Observed_loss_of_medicine' has no known causal explanation. | 0.0071 |
+| V6 | case_v6_missing_operational_typing | Prior event involves the medicine but lacks operational typing/task anchoring | unexplained | unexplained | yes | - | Retract ('PhysicalObject_Medicine1', 'DUL.hasLocation', 'PhysicalObject_ShadowTray') in step 'Observed_loss_of_medicine' has no known causal explanation. | 0.0096 |

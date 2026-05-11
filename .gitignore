@@ -1,0 +1,34 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.pytest_tmp*/
+*.egg-info/
+.venv/
+venv/
+build/
+dist/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Java / Maven
+target/
+*.class
+*.jar
+
+# Local tooling
+.vscode/
+.idea/
+.github/java-upgrade/
+
+# Generated experiment artifacts
+Explanations/outputs/
+Semantic_memory_pipeline/Pruning/output/
+Semantic_memory_pipeline/Pruning/*_benchmark.txt

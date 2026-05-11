@@ -1,0 +1,17 @@
+﻿{
+  "case_ids": [
+    "CG1_base_loss_clean",
+    "CG2_wrong_location_decoy",
+    "CG3_old_decoy",
+    "CG4_nurse_separated_clean",
+    "CG5_nurse_separated_wrong_location_decoy",
+    "CG6_nurse_separated_old_decoy"
+  ],
+  "conditions": [
+    "PC1",
+    "PC2",
+    "PC3"
+  ],
+  "runs_per_condition": 3,
+  "sleep_s": 5.0
+}
